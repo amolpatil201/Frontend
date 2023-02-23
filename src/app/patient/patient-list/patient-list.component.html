@@ -1,1 +1,5 @@
-<p>patient-list works!</p>
+<div class="row">
+  <div *ngFor="let patient of patients" class="shadow-lg col-sm-4 p-3">
+    <app-patient-card [patient]="patient"></app-patient-card>
+  </div>
+</div>
